@@ -11,11 +11,12 @@ text-indent: 10pt;
 }
 
 .post_image img{
-  width: 100px;
-  height:100px;
+  width: 70px;
+  height:70px;
   border-radius: 150%;
   display: inline-block;
   float:left;
+  margin-top:-60px;
 }
 
 article {
@@ -26,19 +27,25 @@ article {
   margin-bottom: 20px;
 }
 
+article a {
+  text-decoration: none;
+  color:#698EBF;
+}
+article a:hover{
+  color:#273B40;
+}
 article h2{
+  display:inline-block;
   font-family: Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-left:100px;
   }
 
 article h6{
-  font-size: .7em;
-
-  margin-top: -20px;
-  margin-left: 15px;
-
-
+  display: inline-block;
+  font-size: .6em;
 }
+
 p a{
   color: #698EBF;
 }
