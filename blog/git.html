@@ -1,28 +1,74 @@
-<!DOCTYPE html>
-<head>
-  <title>Your page title here</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
-</head>
-<body>
-  <main>
-    <h1>Git Hub and Version Control</h1>
-    <h2>A very basic overview.</h2>
-    <h4>1.24.16</h4>
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+    <title>SNM|BLOG|Version Control</title>
+  </head>
+  <body>
 
-    <section>
-      <p>
+    <header>
+      <img src="../imgs/portrait.jpg" class="portrait" alt="portrait"/>
+      <h1>Sean M Norton</h1>
+      <div class="social">
+       <a href="https://twitter.com/SeanMNorton"> <img src="../imgs/twit.png" id="Twitter"/></a>
+        <a href="https://github.com/SeanMNorton"> <img src="../imgs/git.png" id="GitHub"/></a>
+        <a href="https://www.linkedin.com/in/seanmnorton"> <img src="../imgs/in.png" id="LinkedIn"/></a>
+      </div>
+      <nav>
+        <a href="../index.html">HOME</a><a href="index.html">BLOG</a><a href="#">PORTFOLIO</a><a href="#">RESUME</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="post_image">
+      <!-- <img src="#" alt="post image" /> -->
+      </div>
+
+      <article>
+        <h2>Git Hub and Version Control</h2>
+        <h6>1.24.16</h6>
+
+        <p><b> A Very Basic Overview</b></p>
+      <P>
         The command line, git and GitHub are the staples of coding and version control. GitHub is a repository hosting service, meaning it can hold all of our files and folders when coding. It’s great interface also makes it easy for managing and sharing projects/repos a.k.a. repositories. The command line matched with git is how we communicate to GitHub.
-      </p>
-      <p>
+      </P>
+      <P>
           Using CLI (command line) we can “git clone” or copy our repos to our computer. Doing this makes sure that we can edit our files offline, we can also get to them from anywhere, by cloning/pulling them to any computer. When you make an edit on the file locally, it does not automatically update online, you must tell it to do so, this helps prevent from sharing broken code. Another safety precaution we can use is to edit on a new branch. A good way to see branches are as versions of the master(trunk) code where you branch off with new code that hasn’t been tested yet. This prevents breaking the master file that other people could be working on as well. Once your code (branch) is properly tested and works you can merge it with the master code. This whole process is part of version control.
-      </p>
-      <p>
+      </P>
+      <P>
          Version control is a way that people keep track of changes made to their code, each update we commit to GitHub, GItHub keeps track of. This again helps make sure that when/if the code breaks we can go back to a past version that worked and fix any issues that seemed to have arrived in our code.
-      </p>
+      </P>
 
-        <!-- copy and paste as many sections as you want to add paragraphs -->
-      </section>
+      </article>
     </main>
+
+<aside>
+    <h3>Blog Archive</h3>
+     <ul>
+       <li>2016
+         <ul>
+           <li>January</li>
+           <li>February</li>
+           <li>March</li>
+           <li>April</li>
+         </ul>
+       </li>
+       <li>2015
+         <ul>
+           <li>January</li>
+           <li>February</li>
+           <li>March</li>
+           <li>April</li>
+         </ul>
+       </li>
+     </ul>
+  </aside>
+
+   <footer>
+     <p>Contact info and other important things.</p>
+   </footer>
+<!--<img src="../imgs/wireframe_blogs.png"/> -->
   </body>
-  </html>
+</html>

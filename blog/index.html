@@ -3,43 +3,46 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index.css">
     <title>BLOG | Sean M Norton</title>
   </head>
   <body>
 
     <header>
-      <img src="#" alt="portrait" class="portrait"/>
+      <img src="../imgs/portrait.jpg" alt="portrait" class="portrait"/>
       <h1>Sean M Norton</h1>
 
       <div class="social">
-        <a href="#"> <img src="#" alt="Facebook"/> </a>
-        <a href="#"> <img src="#" alt="Twitter"/> </a>
-        <a href="#"> <img src="#" alt="Google"/> </a>
-        <a href="#"> <img src="#" alt="GitHub"/> </a>
-        <a href="#"> <img src="#" alt="LinkedIn"/> </a>
+      <a href="https://twitter.com/SeanMNorton"> <img src="../imgs/twit.png" id="Twitter"/></a>
+        <a href="https://github.com/SeanMNorton"> <img src="../imgs/git.png" id="GitHub"/></a>
+        <a href="https://www.linkedin.com/in/seanmnorton"> <img src="../imgs/in.png" id="LinkedIn"/></a>
 
       </div>
       <nav>
-        <a href="#">HOME</a> | <a href="/blog/index.html">BLOG</a> | <a href="#">PORTFOLIO</a> | <a href="#">RESUME</a>
+        <a href="../index.html">HOME</a><a href="index.html">BLOG</a><a href="#">PORTFOLIO</a><a href="#">RESUME</a>
       </nav>
-      <hr/>
-    </header>
 
+    </header>
+<main>
     <article>
-      <h2>Git Hub and Version Control</h2>
-      <h3>1.24.16</h3>
-              <img src="#" alt="post image" />
-      <p>The command line, git and GitHub are the staples of coding and version control. GitHub is a repository hosting service, meaning it can hold all of our files and folders when coding. It’s great interface also makes it easy for managing and sharing projects/repos a.k.a. repositories. The command line matched with git is how we communicate to GitHub.</p>
-        <a href="http://seanmnorton.github.io/blog/git.html">Continued...</a>
+      <a href="css-concepts.html"><h2>CSS: inline VS inline-block.</h2>
+      <h6>Posted: Feburary, 7th 2016</h6> </a>
+            <div class="post_image">  <img src="../imgs/blocks.jpg" alt="post image" /> </div>
     </article>
 
-    <div class="nextpage">
+    <article>
+      <a href="git.html"><h2>Git Hub and Version Control</h2>
+      <h6>Posted: January, 24th 2016</h6> </a>
+            <div class="post_image">  <img src="../imgs/git.png" alt="post image" /> </div>
+    </article>
+
+   <!-- <div class="nextpage">
       <p>
         <a href="#">previous</a> |
         <a href="#">next</a>
-      </p>
+      </p> -->
     </div>
-
+</main>
     <aside>
     <h3>Blog Archive</h3>
      <ul>
@@ -65,6 +68,6 @@
    <footer>
      <p>Contact info and other important things.</p>
    </footer>
-<img src="../imgs/blog-index.png" alt="wireframe image"/>
+<!--<img src="../imgs/blog-index.png" alt="wireframe image"/>-->
   </body>
 </html>
