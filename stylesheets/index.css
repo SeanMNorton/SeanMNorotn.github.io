@@ -1,0 +1,22 @@
+main{
+  margin-top: 225px;
+  margin-left: 15%;
+}
+aside{
+  float:left;
+}
+
+aside img{
+  height: 150px;
+  border-radius: 50%;
+  margin: 0px 40px 0px 25%;
+}
+
+article{
+  width: 500px;
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
