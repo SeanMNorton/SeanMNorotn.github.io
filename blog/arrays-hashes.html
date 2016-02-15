@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+    <title>BLOG | Sean M Norton</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="../imgs/portrait.jpg" class="portrait" alt="portrait"/>
+      <h1>Sean M Norton</h1>
+      <div class="social">
+       <a href="https://twitter.com/SeanMNorton"> <img src="../imgs/twit.png" id="Twitter"/></a>
+        <a href="https://github.com/SeanMNorton"> <img src="../imgs/git.png" id="GitHub"/></a>
+        <a href="https://www.linkedin.com/in/seanmnorton"> <img src="../imgs/in.png" id="LinkedIn"/></a>
+      </div>
+      <nav>
+        <a href="../index.html">HOME</a><a href="index.html">BLOG</a><a href="#">PORTFOLIO</a><a href="#">RESUME</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="post_image">
+      <img src="../imgs/hash_vs_array.jpg" alt="post image" />
+      </div>
+
+      <article>
+        <h2>Arrays vs Hashes</h2>
+        <h6>Feburary, 14th 2016</h6>
+        <p>
+<h4>Arrays</h4><br>
+  An array are: ordered, integer-indexed collections of any object.<br><br>
+
+Lets break this down a little bit... So what this means this that an array is a collection or &quot;list&quot; of an object(string,integer,etc...) these objects are ordered using and integer-indexing, starting at 0. So the first value will be indexed at 0 the second 1, third 2 etc...<br><br>
+
+<code>array_name = [0, &quot;one&quot;, 2, &quot;three&quot;]</code><br><br>
+
+<h4>Hashes</h4><br>
+Hashes are: a collection of unique keys and their values.<br><br>
+
+These are really similar to arrays, but lets first break down what the line above means. So a hash is a collection or &quot;list&quot; of keys, now these keys are very similar to the integer-index that arrays use, but for keys we can define them as anything, such as a string or integer. Then the values can be any object just like in arrays.<br><br>
+
+<code>hash_name = { key1: &quot;value1&quot;, key2: &quot;value 2&quot;, 3: 3}</code><br><br>
+
+In this line of code the hash name comes first and then we set it equal to a hash with keys of , key1: key2:, 3: each key is assigned a value the values above are &quot;value1&quot;, &quot;value 2&quot; and 3.<br><br>
+
+In previous versions of Ruby you will see hashes defined as follows:<br><br>
+<code>hash_name = { :key1 => &quot;value1&quot;, :key2 => &quot;value 2&quot;, :3 => 3}</code><br><br>
+
+In recent updates they have created the short hand which I used originally, they both do the exact same thing, just one is easier to type.<br><br>
+
+<h4>VS</h4>
+
+Both arrays and hashes come in handy. Where I am at with my knowledge of ruby, beginner, I would not say that one is better than the other. Figuring out which one to use just comes down to what you need it for. If you wanted a list of friends that you had, you could use an array.<br><br>
+
+  <code>friends_array=[Joe, Dylan, Jon, Sammy, Kate]</code><br><br>
+
+
+Lets say you wanted to store specific details of a friend and you needed to retrieve those details with a set key, you would use a hash.<br><br>
+
+<code>joes_hash = { haircolor: &quot;brown&quot;, eyecolor: &quot;blue&quot;, trustworthy:&quot;no&quot; }</code><br><br>
+
+If you wanted to see if Joe was trust worthy you would put:<br><br>
+<code>joes_hash[trustworthy:]</code><br><br>
+this would give you <code>&quot;no&quot;</code>  <br>
+Boom know you know not to trust Joe and it was real easy to look up.
+
+        </p>
+      </article>
+    </main>
+
+<aside>
+    <h3>Blog Archive</h3>
+     <ul>
+       <li>2016
+         <ul>
+           <li>January</li>
+           <li>February</li>
+           <li>March</li>
+           <li>April</li>
+         </ul>
+       </li>
+       <li>2015
+         <ul>
+           <li>January</li>
+           <li>February</li>
+           <li>March</li>
+           <li>April</li>
+         </ul>
+       </li>
+     </ul>
+  </aside>
+
+   <footer>
+     <p>Contact info and other important things.</p>
+   </footer>
+<!--<img src="../imgs/wireframe_blogs.png"/> -->
+  </body>
+</html>
