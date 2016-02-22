@@ -3,20 +3,46 @@ main{
   margin-left: 15%;
 }
 aside{
-  float:left;
+  float:none;
+  position: relative;
+  margin:auto;
+  margin-left: 32%;
 }
 
 aside img{
   height: 150px;
   border-radius: 50%;
-  margin: 0px 40px 0px 25%;
+
+}
+
+.social{
+  display:inline-block;
+  margin-top: 4px;
+  margin: auto;
+  float:none;
+  position: relative;
+}
+
+.social img{
+  height:none;
+  padding:none;
 }
 
 article{
-  width: 500px;
+  width: 80%;
   display: inline-block;
   position: relative;
-  margin-left: 40px;
+  margin: auto;
   margin-top: 40px;
+  text-align: center;
 
+
+}
+article a{
+  color:#273B40;
+  text-decoration: none;
+}
+
+article a:hover{
+  color:#70848C;
 }
