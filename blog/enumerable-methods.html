@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+    <title>BLOG | Sean M Norton</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="../imgs/portrait.jpg" class="portrait" alt="portrait"/>
+      <h1>Sean M Norton</h1>
+      <div class="social">
+       <a href="https://twitter.com/SeanMNorton"> <img src="../imgs/twit.png" id="Twitter"/></a>
+        <a href="https://github.com/SeanMNorton"> <img src="../imgs/git.png" id="GitHub"/></a>
+        <a href="https://www.linkedin.com/in/seanmnorton"> <img src="../imgs/in.png" id="LinkedIn"/></a>
+      </div>
+      <nav>
+        <a href="../index.html">HOME</a><a href="index.html">BLOG</a><a href="#">PORTFOLIO</a><a href="#">RESUME</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="post_image">
+      <img src="../imgs/map.png" alt="post image" />
+      </div>
+
+      <article>
+        <h2>A Brief Guide to Enumerable and .map</h2><br>
+
+        <p>Enumerables are extremely handy in Ruby. They are used to iterate through a collection of objects. The dictionary definition of the word enumerate: </p>
+        <ol>
+          <li>to mention separately as if in counting; name one by one</li>
+          <li>to ascertain the number of; count</li>
+        </ol>
+
+        <p>We can use them much like we would use a for statement. There are quite a few different types of enumerables some of them being: each, select, inject, map.</p>
+
+        <p>The simplest of them being each. We can use each on an array to return each item in the array, like so.</p>
+
+        <code>[ 10, 11, 4 ].each { |e| puts e}</code>
+        <p>This Returns:</p>
+        <code>
+        10<br>
+        11<br>
+        4
+      </code>
+        <p>Here the enumerable takes each and puts them through the code to the right of the .each statement. This assigns a variable <code>e</code> to each item coming through and then <code>puts</code> them out one at a time.</p>
+
+        <h4> The map Enumerable </h4>
+
+        <p> The <code>map</code> enumerable is often referred to as <code>collect</code>. Let us, much like above, say you are using an array but this time you want to change the data and then collect/map it into a new array.</p>
+        <code>
+        array_1 = [ 2, 4, 6]<br>
+
+        array_2 = array_1.map {|x| * 2}<br>
+
+        puts array_1.join(<q>, </q>)   #=>   2, 4, 6<br>
+        puts array_2.join(<q>, </q>)   #=>   4, 8, 12
+        </code>
+
+        <p>This takes the original array, <code> array_1</code> and multiplies each item by two and maps it to a new array, <code>array_2</code>. There is nothing odd about it. ;)</p>
+
+        <p>Hopefully this helps explain enumerables, how and why to use them as well as the functions of the map enumerable.</p>
+
+
+
+
+
+
+      </article>
+    </main>
+
+<aside>
+    <h3>Blog Archive</h3>
+     <ul>
+       <li>2016
+         <ul>
+           <li>January</li>
+           <li>February</li>
+           <li>March</li>
+           <li>April</li>
+         </ul>
+       </li>
+       <li>2015
+         <ul>
+           <li>January</li>
+           <li>February</li>
+           <li>March</li>
+           <li>April</li>
+         </ul>
+       </li>
+     </ul>
+  </aside>
+
+   <footer>
+     <p>Contact info and other important things.</p>
+   </footer>
+<!--<img src="../imgs/wireframe_blogs.png"/> -->
+  </body>
+</html>
