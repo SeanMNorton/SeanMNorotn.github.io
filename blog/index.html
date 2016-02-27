@@ -9,78 +9,93 @@
   <body>
 
     <header>
-      <img src="../imgs/portrait.jpg" alt="portrait" class="portrait"/>
-      <h1>Sean M Norton</h1>
-
-      <div class="social">
-      <a href="https://twitter.com/SeanMNorton"> <img src="../imgs/twit.png" id="Twitter"/></a>
-        <a href="https://github.com/SeanMNorton"> <img src="../imgs/git.png" id="GitHub"/></a>
-        <a href="https://www.linkedin.com/in/seanmnorton"> <img src="../imgs/in.png" id="LinkedIn"/></a>
-
-      </div>
       <nav>
-        <a href="../index.html">HOME</a><a href="index.html">BLOG</a><a href="#">PORTFOLIO</a><a href="#">RESUME</a>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Blog</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <h1>Sean M Norton</h1>
+        <a href="../resume.html">Resume</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../contact.html">Contact</a>
       </nav>
-
     </header>
 <main>
-
+<h1>Blogs</h1>
 <!--    <article>
-      <a href="#"><h2>BlogTitle</h2>
-            <div class="post_image">  <img src="../imgs/#" alt="post image" /> </div> </a>
+      <a href="#"> <div class="post_image">  <img src="../imgs/#" alt="post image"/>< /div>
+      <h2>BlogTitle</h2> </a>
+      <section>
+      </section>
     </article> -->
 
+    <!-- #guide to enumerables. -->
     <article>
-      <a href="enumerable-methods.html"><h2>A Brief Guide to Enumerable and .map</h2>
-            <div class="post_image">  <img src="../imgs/map.png" alt="post image" /> </div> </a>
-    </article>
+      <a href="enumerable-methods.html"> <div class="post_image">  <img src="../imgs/map_post.jpg" alt="post image" /> </div>
+      <h2>A Brief Guide to Enumerable and .map</h2></a>
+      <section>
+        <p>Enumerables are extremely handy in Ruby. They are used to iterate through a collection of objects. The dictionary definition of the word enumerate: </p>
+        <ol>
+          <li>to mention separately as if in counting; name one by one</li>
+          <li>to ascertain the number of; count</li>
+        </ol>
 
+        <p>We can use them much like we would use a for statement. There are quite a few different types of enumerables some of them being: each, select, inject, map.</p>
+
+        <p>The simplest of them being each. We can use each on an array to return each item in the array, like so.</p>
+
+        <code>[ 10, 11, 4 ].each { |e| puts e}</code>
+        <a href="enumerable-methods.html">[Read More]</a>
+      </section>
+
+    </article>
+    <!-- arrays vs hashes. -->
      <article>
-      <a href="arrays-hashes.html"><h2>Arrays VS Hashes</h2>
-            <div class="post_image">  <img src="../imgs/hash_vs_array.jpg" alt="post image" /> </div></a>
-    </article>
+      <a href="arrays-hashes.html"><div class="post_image">  <img src="../imgs/hash_vs_array.jpg" alt="post image" /> </div><h2>Arrays VS Hashes</h2></a>
+      <section>
+        An array are: ordered, integer-indexed collections of any object.<br><br>
 
+      Lets break this down a little bit... So what this means this that an array is a collection or &quot;list&quot; of an object(string,integer,etc...) these objects are ordered using and integer-indexing, starting at 0. So the first value will be indexed at 0 the second 1, third 2 etc...<br><br>
+
+      <code>array_name = [0, &quot;one&quot;, 2, &quot;three&quot;]</code><br><br>
+
+      <h3>Hashes</h3>
+      Hashes are: a collection of unique keys and their values.<br><br>
+
+      These are really similar to arrays, but lets first break down what the line above means. So a hash is a collection or &quot;list&quot; of keys, now these keys are very similar to the integer-index that arrays use, but for keys we can define them as anything, such as a string or integer. Then the values can be any object just like in arrays.<br><br>
+
+      <code>hash_name = { key1: &quot;value1&quot;, key2: &quot;value 2&quot;, 3: 3}</code>   <a href="arrays-hashes.html">[Read More]</a>
+
+      </section>
+    </article>
+    <!-- inline vs inline-block -->
     <article>
-      <a href="css-concepts.html"><h2>CSS: inline VS inline-block.</h2>
-            <div class="post_image">  <img src="../imgs/blocks.jpg" alt="post image" /> </div> </a>
+      <a href="css-concepts.html"> <div class="post_image">  <img src="../imgs/blocks.jpg" alt="post image" /> </div> <h2>CSS: inline VS inline-block.</h2>
+            </a>
+          <section>
+            <p>
+              <P>I'm going to try and make this as basic as I can for everyone, this topic is a bit new for me but after some searching around here's what I've found:</P>
+              <P><b>inline</b> - Inline takes the left and right margins and padding into consideration but not the top or the bottom. This also allows elements to sit on any side of them. This means that elements will be stacked on top of each other without spacing but can have space from right to left.</P>
+                <P><b>inline-block</b> - Inline-block takes all margins and padding into consideration; top,right,bottom,left. This allows for the elements to be in a row with margins or padding.</P> <a href="css-concepts.html">[Read More]</a>
+            </p>
+          </section>
     </article>
-
+    <!-- Git Hub and Version Control -->
     <article>
-      <a href="git.html"><h2>Git Hub and Version Control</h2>
-            <div class="post_image">  <img src="../imgs/git.png" alt="post image" /> </div> </a>
+      <a href="git.html"><div class="post_image">  <img src="../imgs/git.png" alt="post image" /> </div><h2>Git Hub and Version Control</h2>
+             </a>
+             <section>
+               <p><b> A Very Basic Overview</b></p>
+             <P>
+               The command line, git and GitHub are the staples of coding and version control. GitHub is a repository hosting service, meaning it can hold all of our files and folders when coding. It’s great interface also makes it easy for managing and sharing projects/repos a.k.a. repositories. The command line matched with git is how we communicate to GitHub.
+             </P>
+             <P>
+                 Using CLI (command line) we can “git clone” or copy our repos to our computer. Doing this makes sure that we can edit our files offline, we can also get to them from anywhere, by cloning/pulling them to any computer. When you make an edit on the file locally, it does not automatically update online, you must tell it to do so, this helps prevent from sharing broken code. Another safety precaution we can use is to edit on a new branch... <br><br> <a href="git.html">[Read More]</a>
+               </P>
+             </section>
     </article>
-
-   <!-- <div class="nextpage">
-      <p>
-        <a href="#">previous</a> |
-        <a href="#">next</a>
-      </p> -->
-    </div>
-</main>
-    <aside>
-    <h3>Blog Archive</h3>
-     <ul>
-       <li>2016
-         <ul>
-           <li>January</li>
-           <li>February</li>
-           <li>March</li>
-           <li>April</li>
-         </ul>
-       </li>
-       <li>2015
-         <ul>
-           <li>January</li>
-           <li>February</li>
-           <li>March</li>
-           <li>April</li>
-         </ul>
-       </li>
-     </ul>
-    </aside>
 
    <footer>
-     <p>Contact info and other important things.</p>
+     <p></p>
    </footer>
 <!--<img src="../imgs/blog-index.png" alt="wireframe image"/>-->
   </body>
