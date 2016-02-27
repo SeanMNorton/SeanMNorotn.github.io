@@ -1,0 +1,36 @@
+html{
+  background-image: url('../imgs/index_background.jpg');
+  background-size: cover;
+  min-height: 100%;
+  background-position: left bottom;
+}
+main{
+  border-radius: 10px;
+  position: inherit;;
+  margin-top: 15%;
+  /*display: flex;
+  justify-content: center;
+  flex-direction: column;*/
+  color:#4F555A;
+  /*text-shadow: 0px 2px 4px grey;*/
+  height: 400px;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  font-size: 3em;
+  /*background: rgba(200, 200, 200, 0.3);*/
+  background-color: white;
+}
+
+main .title{
+  padding-top:3%;
+}
+
+main section{
+  margin-left: 20%;
+  padding-top: 2%;
+  width:61%;
+  font-size: .37em;
+  text-align: left;
+
+}
