@@ -4,7 +4,7 @@ html{
   min-height: 100%;
   background-position: left bottom;
 }
-.title{
+main{
   border-radius: 10px;
   position: relative;
   margin-top: 15%;
@@ -19,4 +19,20 @@ html{
   text-align: center;
   font-size: 3em;
   background: rgba(200, 200, 200, 0.3);
+  /*background: rgba(68, 73,77, 0.5);*/
+}
+.title{
+  text-align: center;
+
+}
+
+.media img{
+  height:14%;
+  padding-top: 2%;
+}
+
+.email a{
+  color:inherit;
+  text-decoration: none;
+  font-size: 90%;
 }
