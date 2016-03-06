@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+    <title>BLOG | Sean M Norton</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="index.html">Blog</a>
+          <a href="../portfolio.html">Portfolio</a>
+          <h1>Sean M Norton</h1>
+          <a href="../resume.html">Resume</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+      <div class="post_image">
+        <img src="../imgs/jsdoc.jpg" alt="post image" />
+      </div>
+
+      <article>
+        <h2>Documentation Ruby VS JS</h2>
+
+        <p>There are a lot of things that are similar between Ruby and JavaScript. Though a lot of those things have different syntax or documentation.  This is a brief overview on some of the things that are different. This article might be of better use if you know the fundamentals of at least one of these languages.</p>
+
+        <p>First and foremost, in JavaScript unlike in Ruby, you have to define what is a variable by typing “var” and then the variable_name as well as end each line with a semicolon. This lets the program know that your line of code has ended and is not continuing onto the next line.</p>
+
+        <h4>Ruby:</h4>
+        <code> array = [ “a”, “b” , “c”] </code>
+        <h4>JavaScript:</h4>
+        <code> var array =  [ “a”, “b” , “c”];</code>
+
+        <p>Here are some differences in basic documentation that can help modify this array.</p>
+
+        <h4>Ruby adding values:</h4>
+        <code>array.push(“d”)</code>
+        <h4>JavaScript adding values:</h4>
+        <code> array.push(“d”); # =>  [ “a”, “b” , “c”, “d”]</code>
+        <h4>Ruby deleting values:</h4>
+        <code>array.delete_at(2) </code>
+        <h4>JavaScript deleting values:</h4>
+        <code>array.splice(2,1);  #=> [ “a”, “b” , “d”]</code>
+
+        <p>In JavaScript the .splice() method takes arguments in: 1st the index in which the item is being added or removed. 2nd is how many items to delete, this can be set to 0 if you are not removing anything. 3rd is optional, where you can specify what items to add.</p>
+
+        <p>Sometimes JS doesn’t have the same method that Ruby might. Let’s say that we wanted to get the last item in our array, Ruby has a .last method while JS does not, there is a workaround.</p>
+        <h4>Ruby:</h4>
+        <code>array.last => “d” </code>
+        <h4>JS:</h4>
+        <code>array[array.length - 1]; => “d” </code>
+        <p>So for JS when finding the last item in the array, we took the array length-1 as the index value. the reason we subtract one is because indexes start at 0 but when counting the length of the array it starts at 1. In this case array.length = 3 and the index of “d”, our last item is index 2.</p>
+
+        <p>Let’s change our array all together for the next one. <code>  array2 = [1,2,3,4,]</code>
+        The next and last thing I’m going to show you is how iterating through an array is different in Ruby and JS.</p>
+
+        <h4>Ruby:</h4>
+        <code> array2.each{|n| puts n} #=> 1 2 3 4</code>
+        <h4>JS:</h4>
+        <code> array2.forEach(function(n)  {  console.log(n);  } ); #=> 1 2 3 4</code>
+
+        <p>In JS .forEach replaces the .each method that we use in Ruby. Next the variable that we set each item in the array to is set in JS by calling function(variable_name) last puts in Ruby has been replaced with console.log(object) in JS.</p>
+
+
+
+      </article>
+    </main>
+
+  </body>
+</html>

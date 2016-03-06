@@ -48,3 +48,19 @@ article h6{
 p a{
   color: #698EBF;
 }
+
+code {
+  border-radius: 4px;
+  background-color: rgb(156, 192, 204);
+  padding:.6em;
+  display: inline-block;
+}
+
+p code{
+  padding: .1em;
+  margin: .2em;
+}
+
+h4{
+  margin-bottom:.5em;
+}

@@ -59,3 +59,20 @@ article h2{
   section a:hover{
     color:#7B858D;
   }
+
+  code {
+    color: #4F555A;
+    border-radius: 4px;
+    background-color: rgb(156, 192, 204);
+    padding:.6em;
+    display: inline-block;
+  }
+
+  p code{
+    padding: .1em;
+    margin: .2em;
+  }
+
+  h4{
+    margin-bottom:.5em;
+  }
