@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+    <title>BLOG | Sean M Norton</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="index.html">Blog</a>
+          <a href="../portfolio.html">Portfolio</a>
+          <h1>Sean M Norton</h1>
+          <a href="../resume.html">Resume</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+      <div class="post_image">
+        <img src="../imgs/injection.jpg" alt="post image" />
+      </div>
+
+      <article>
+        <h2>SQL Injection:</h2>
+        <p>
+        “SQL injection is a code injection technique used to attack data-driven applications.” -<a href=”https://en.wikipedia.org/wiki/SQL_injection”> wikipedia</a><br></p>
+        <p>These types of attacks are rather common, If a site is not protected than string literal escape characters can used as user input and change the output of an SQL statement.</p>
+
+        <p>This sounds a little confusing, but it’s rather straightforward, say you were on a website and forgot your password, you might click forgot password and then it would send you in an email your user_name and password. It would be getting this information from a database of some sort. One way we could pull this information would be to use SQL</p>
+
+        <code> SELECT password, user_name FROM users WHERE user_name = userName ; </code><br>
+
+        <p>This would return your username and password if you gave it your “userName”
+        An attacker could use this opportunity to have their userName be ’ ’ OR ‘1’ = ‘1’. Let’s see how this could be a problem.</p>
+
+        <code> SELECT password, user_name FROM users WHERE name = ‘ ‘ OR ‘1’ = ‘1’;</code><br>
+        <p>In this case no user name will be an empty string, but ‘1’ will always = ‘1’ thus sending every username and password to the hacker.</p>
+
+
+        <p>There are quite a few different ways that this can be done as well, this was just one of the easier examples.</p>
+
+        <p>A way to protect against such an attack, specifically the one provided, would be to use parameterized queries. Also known as prepared statements. This way of coding allows your database to tell the difference between code and data/input data. In this way, if an attacker were to put OR 1 = 1 it would look for a string that matched the userName OR  1 = 1 instead of running it as code.</p>
+
+        <p>You can find more information about protecting your data from injection here, from <a href=”https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet”>owasp.org</a></p>
+
+        Also enjoy this comic: <br><br> <a href = “http://xkcd.com/327/”><img src="../imgs/bobby_tables.png" alt="bobby tables comic"/></a>
+
+      </article>
+    </main>
+
+  </body>
+</html>
