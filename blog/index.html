@@ -29,44 +29,45 @@
       </section>
     </article> -->
 
-    <article>
-      <a href="tech.html"> <div class="post_image">  <img src="../imgs/injection.jpg" alt="post image"/></div>
-      <h2>SQL Injection</h2> </a>
-      <section>
-        “SQL injection is a code injection technique used to attack data-driven applications.” -<a href=”https://en.wikipedia.org/wiki/SQL_injection”> wikipedia</a><br></p>
-        <p>These types of attacks are rather common, If a site is not protected than string literal escape characters can used as user input and change the output of an SQL statement.</p>
+    <!--SQL injection  -->
+     <article>
+        <a href="tech.html"> <div class="post_image">  <img src="../imgs/injection.jpg" alt="post image"/></div>
+        <h2>SQL Injection</h2> </a>
+        <section>
+          “SQL injection is a code injection technique used to attack data-driven applications.” -<a href=”https://en.wikipedia.org/wiki/SQL_injection”> wikipedia</a><br></p>
+          <p>These types of attacks are rather common, If a site is not protected than string literal escape characters can used as user input and change the output of an SQL statement.</p>
 
-        <p>This sounds a little confusing, but it’s rather straightforward, say you were on a website and forgot your password, you might click forgot password and then it would send you in an email your user_name and password. It would be getting this information from a database of some sort. One way we could pull this information would be to use SQL</p>
-        <p> <a href="tech.html">[Read More]</a></p>
-      </section>
-    </article>
+          <p>This sounds a little confusing, but it’s rather straightforward, say you were on a website and forgot your password, you might click forgot password and then it would send you in an email your user_name and password. It would be getting this information from a database of some sort. One way we could pull this information would be to use SQL</p>
+          <p> <a href="tech.html">[Read More]</a></p>
+        </section>
+     </article>
+     <!-- Ruby VS JavaScript: Documentation -->
+     <article>
+        <a href="javascript.html"> <div class="post_image"> <img src="../imgs/jsdoc.jpg" alt="post image"/></div>
+        <h2>Ruby VS JavaScript: Documentation</h2></a>
+         <section>
+              <p>There are a lot of things that are similar between Ruby and JavaScript. Though a lot of those things have different syntax or documentation.  This is a brief overview on some of the things that are different. This article might be of better use if you know the fundamentals of at least one of these languages.</p>
 
-   <article>
-      <a href="javascript.html"> <div class="post_image"> <img src="../imgs/jsdoc.jpg" alt="post image"/></div>
-      <h2>Ruby VS JavaScript: Documentation</h2> </a>
-      <section>
-        <p>There are a lot of things that are similar between Ruby and JavaScript. Though a lot of those things have different syntax or documentation.  This is a brief overview on some of the things that are different. This article might be of better use if you know the fundamentals of at least one of these languages.</p>
+              <p>First and foremost, in JavaScript unlike in Ruby, you have to define what is a variable by typing “var” and then the variable_name as well as end each line with a semicolon. This lets the program know that your line of code has ended and is not continuing onto the next line.</p>
 
-        <p>First and foremost, in JavaScript unlike in Ruby, you have to define what is a variable by typing “var” and then the variable_name as well as end each line with a semicolon. This lets the program know that your line of code has ended and is not continuing onto the next line.</p>
-
-        <h4>Ruby:</h4>
-        <code> array = [ “a”, “b” , “c”] </code>
-        <h4>JavaScript:</h4>
-        <code> var array =  [ “a”, “b” , “c”];</code>
-        <p> <a href="javascript.html">[Read More]</a></p>
-      </section>
-    </article>
-
-    <!-- #guide to enumerables. -->
+              <h4>Ruby:</h4>
+              <code> array = [ “a”, “b” , “c”] </code>
+              <h4>JavaScript:</h4>
+              <code> var array =  [ “a”, “b” , “c”];</code><br>
+              <a href="javascript.html">[Read More]</a>
+          </section>
+      </article>
+    <!-- Classes Ruby -->
     <article>
         <a href="ruby-classes.html"> <div class="post_image">  <img src="../imgs/classes.jpg" alt="post image"/></div>
         <h2>Classes</h2> </a>
         <section>
           <p>To describe better what classes, instance variables, and instance methods are, I will explain them in a more natural form. Let us say we have a box, this box will be our class. In this box we have things, these things will be our instance variables, anything we do to these things will be instance methods. Instance just means in the instance of this class, that is where it can be used.
-  So if we have a box class with <code>@things</code> in it such as a trophy, shirt mug and a cat. By putting the at symbol in front of our variable, things, we are making it an instance variable.
-</p><a href="ruby-classes.html">[Read More]</a>
+            So if we have a box class with <code>@things</code> in it such as a trophy, shirt mug and a cat. By putting the at symbol in front of our variable, things, we are making it an instance variable.
+          </p><a href="ruby-classes.html">[Read More]</a>
         </section>
-      </article> -->
+    </article>
+    <!-- #guide to enumerables. -->
     <article>
       <a href="enumerable-methods.html"> <div class="post_image">  <img src="../imgs/map_post.jpg" alt="post image" /> </div>
       <h2>A Brief Guide to Enumerable and .map</h2></a>
@@ -81,13 +82,13 @@
 
         <p>The simplest of them being each. We can use each on an array to return each item in the array, like so.</p>
 
-        <code>[ 10, 11, 4 ].each { |e| puts e}</code>
+        <code>[ 10, 11, 4 ].each { |e| puts e}</code><br>
         <a href="enumerable-methods.html">[Read More]</a>
       </section>
 
     </article>
     <!-- arrays vs hashes. -->
-     <article>
+    <article>
       <a href="arrays-hashes.html"><div class="post_image">  <img src="../imgs/hash_vs_array.jpg" alt="post image" /> </div><h2>Arrays VS Hashes</h2></a>
       <section>
         An array are: ordered, integer-indexed collections of any object.<br><br>
@@ -101,7 +102,8 @@
 
       These are really similar to arrays, but lets first break down what the line above means. So a hash is a collection or &quot;list&quot; of keys, now these keys are very similar to the integer-index that arrays use, but for keys we can define them as anything, such as a string or integer. Then the values can be any object just like in arrays.<br><br>
 
-      <code>hash_name = { key1: &quot;value1&quot;, key2: &quot;value 2&quot;, 3: 3}</code>   <a href="arrays-hashes.html">[Read More]</a>
+      <code>hash_name = { key1: &quot;value1&quot;, key2: &quot;value 2&quot;, 3: 3}</code><br>
+         <a href="arrays-hashes.html">[Read More]</a>
 
       </section>
     </article>
@@ -113,7 +115,8 @@
             <p>
               <P>I'm going to try and make this as basic as I can for everyone, this topic is a bit new for me but after some searching around here's what I've found:</P>
               <P><b>inline</b> - Inline takes the left and right margins and padding into consideration but not the top or the bottom. This also allows elements to sit on any side of them. This means that elements will be stacked on top of each other without spacing but can have space from right to left.</P>
-                <P><b>inline-block</b> - Inline-block takes all margins and padding into consideration; top,right,bottom,left. This allows for the elements to be in a row with margins or padding.</P> <a href="css-concepts.html">[Read More]</a>
+                <P><b>inline-block</b> - Inline-block takes all margins and padding into consideration; top,right,bottom,left. This allows for the elements to be in a row with margins or padding.</P>
+                <br><a href="css-concepts.html">[Read More]</a>
             </p>
           </section>
     </article>

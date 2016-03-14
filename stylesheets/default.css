@@ -1,7 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
 html{
   background-color: #4F555A;
   font-family: sans-serif;
   min-width: 700px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 nav{
@@ -14,6 +18,8 @@ nav{
   left: 0;
   right: 0;
   border-bottom: 2px solid #7C858D;
+
+  font-family: 'Oswald', sans-serif;
 }
 nav a{
   padding: 2%;
