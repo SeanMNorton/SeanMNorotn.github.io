@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/accordion.css">
+    <title>Cheat Sheet | Sean M Norton</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../portfolio.html">Portfolio</a>
+          <h1>Sean M Norton</h1>
+          <a href="../resume.html">Resume</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2> Ruby Enumerables Cheat Sheet:</h2>
+
+
+        <div class="togglebox">
+
+          <input id="toggle1" type="radio" name="toggle" />
+          <label for="toggle1">map & collect</label>
+
+          <section id="content1">
+            <p>
+            Returns a new array with data collected from the block that was ran. <br>If a block is not give, with will return an enumerator.
+            </p>
+            <p>
+              <code>
+                (1..4).map { |num| num*num } #=> [1, 4, 9, 16] <br>
+                (1..2).collect { "pizza" } #=> ["pizza", "pizza"]
+              </code>
+            </p>
+          </section>
+
+          <input id="toggle2" type="radio" name="toggle" />
+          <label for="toggle2">count</label>
+
+          <section id="content2">
+            <p>
+              count returns the number of items. If given an argument, the number of items that are equal to the argument are counted. When given a block all true items are counted.
+            </p>
+            <p>
+              <code>
+                nums = [1, 2, 3, 4, 2]<br><br>
+                nums.count #=> 5<br>
+                nums.count(2) #=> 2<br>
+                nums.count{|i| i%2==0} #=> 3
+              </code>
+            </p>
+          </section>
+
+          <input id="toggle3" type="radio" name="toggle" />
+          <label for="toggle3">cycle</label>
+
+          <section id="content3">
+            <p>
+              Calls block for each. If no argument is given, cycle will continue forever.
+            </p>
+            <p>
+              <code>
+                pizza = ["more","pizza!"]<br><br>
+                pizza.cycle{|x| puts x} #=> more, pizza, more, pizza... #forever<br>
+                pizza.cycle(2){|x| puts x} #=> more, pizza, more, pizza
+               </code>
+            </p>
+          </section>
+
+          <input id="toggle4" type="radio" name="toggle" />
+          <label for="toggle4">drop</label>
+
+          <section id="content4">
+            <p>
+              Drops elements from enum, and returns the rest in an array.
+            </p>
+            <p>
+              <code>
+                a = [1, 2, 3, 4, 5, 0]<br>
+                a.drop(3) #=> [4, 5, 0]
+              </code>
+            </p>
+          </section>
+
+          <input id="toggle5" type="radio" name="toggle" />
+          <label for="toggle5">slice</label>
+
+          <section id="content5">
+            <p>
+              Iterates the given block for each slice. Takes an argument for number of items in slice.
+            </p>
+            <p>
+              <code>
+                (1..10).each_slice(3){ |slice| puts slice}<br>
+                # output<br>
+                [1, 2, 3]<br>
+                [4, 5, 6]<br>
+                [7, 8, 9]<br>
+                [10]
+              </code>
+            </p>
+          </section>
+
+          <input id="toggle6" type="radio" name="toggle" />
+          <label for="toggle6">first</label>
+
+          <section id="content6">
+            <p>
+              Returns first element, or first nth elements of enumerable.
+            </p>
+            <p>
+              <code>
+                array = ['need', 'more', 'pizza']<br>
+                array.first #=> ['need']<br>
+                array.first(2) #=> ['need', 'more']<br>
+                array.first(4) #=> ['need', 'more', 'pizza']
+              </code>
+
+            </p>
+          </section>
+
+          <input id="toggle7" type="radio" name="toggle" />
+          <label for="toggle7">partition</label>
+
+          <section id="content7">
+            <p>
+              partition returns two arrays, the first containing true values from evaluated black and the second containing the rest.
+            </p>
+            <p>
+              <code>
+                (1..6).partition {|num| num.even? }<br> #=> [[2, 4, 6], [1, 3, 5]]
+              </code>
+
+            </p>
+          </section>
+
+          <input id="toggle8" type="radio" name="toggle" />
+          <label for="toggle8">reject</label>
+
+          <section id="content8">
+            <p>
+              Returns an array for all elements that return false.
+            </p>
+            <p>
+              <code>
+                (1..10).reject {|num| num.even?} <br> &nbsp#=> [1, 3, 5, 7, 9]
+              </code>
+
+            </p>
+          </section>
+
+        </div>
+      </article>
+    </main>
+
+  </body>
+</html>
