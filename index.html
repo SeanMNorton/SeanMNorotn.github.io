@@ -1,27 +1,727 @@
-<!doctype html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-    <title>Home | Sean M Norton</title>
-  </head>
+﻿<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+	<head>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog/index.html">Blog</a>
-      <a href="portfolio.html">Portfolio</a>
-      <h1>Sean M Norton</h1>
-      <a href="resume.html">Resume</a>
-      <a href="bio.html">Bio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <body>
-    <div class=title>Welcome to<br>The Technical Blog of Sean&nbspM&nbspNorton</div>
-  </body>
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>Sean M Norton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <footer>
-    <p>(A chicago based novice)</p>
-  </footer>
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+
+		<!-- ==============================================
+		CSS
+		=============================================== -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/meflat-green.css">
+
+
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+		<!-- ==============================================
+		JS
+		=============================================== -->
+
+
+		<script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+
+
+	</head>
+
+	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+
+					<!-- ======= LOGO (for small screens)========-->
+					<a class="navbar-brand visible-xs scrollto" href="#home">Sn</a>
+
+				</div>
+
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#services" class="scrollto">What I Do</a>
+						</li>
+						<li>
+							<a href="#about" class="scrollto">About Me</a>
+						</li>
+						<li id="logo">
+							<a href="#home" class="scrollto">
+								<h1>S<span>N</span></h1>
+							</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="scrollto">My Projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="scrollto">Contact Me</a>
+						</li>
+					</ul>
+				</div><!--End navbar-collapse -->
+
+			</div><!--End container -->
+
+		</div><!--End main-nav -->
+
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home" class="jumbotron bg-image">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 text-col text-center">
+
+						<h1>Hi, I am Sean Norton</h1>
+						<p>a fullstack web developer</p>
+
+					</div>
+
+					<div class="col-sm-12 text-col text-center">
+							<ul class="social-links">
+								<li class="scrollimation fade-right d4"><a href="https://twitter.com/SeanMNorton"><i class="fa fa-twitter fa-fw"></i></a></li>
+								<li class="scrollimation fade-right d3"><a href="https://www.facebook.com/SeanMichaelNorton"><i class="fa fa-facebook fa-fw"></i></a></li>
+								<li class="scrollimation fade-right d2"><a href="https://github.com/SeanMNorton"><i class="fa fa-github fa-fw"></i></a></li>
+								<li class="scrollimation fade-right"><a href="https://www.linkedin.com/in/seanmnorton/"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+		</header><!--End header -->
+
+		<!-- ==============================================
+		SERVICES
+		=============================================== -->
+		<section id="services" class="white-bg padding-top-bottom">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">What I Do</h1>
+					<p>I am a FullStack Developer and Designer.<br/>Currently working out of Chicago, IL</p>
+
+				</header>
+
+				<div class="row services">
+
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up">
+
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service1.png" alt="" />
+						</div>
+
+						<h2>Web &amp; App Design</h2>
+						<p>Mockup and design web and mobile applications alike</p>
+
+					</div>
+
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up d1">
+
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service2.png" alt="" />
+						</div>
+
+						<h2>Web Development</h2>
+						<p>Build high functioning dynamic websites from the ground up with the client and user in mind.</p>
+
+					</div>
+
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service3.png" alt="" />
+						</div>
+
+						<h2>SEO Content</h2>
+						<p>Make sure your site can be found using search engine optimization and shared properly with Open Graph tags</p>
+
+					</div>
+
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service4.png" alt="" />
+						</div>
+
+						<h2>API Integration</h2>
+						<p>Information is everywhere and I can get it to or from your app with custom API integration.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- ==============================================
+		FEATURED PROJECT
+		=============================================== -->
+		<!-- <section id="feat-project" class="gray-bg padding-top">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">Featured Project</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Aenean purus felis, condimentum et tempor in, commodo id nibh. Fusce a lacus arcu.</p>
+
+				</header>
+
+				<div class="scrollimation fade-up">
+					<img class="img-responsive img-center" src="assets/chrome-top.png" alt="" />
+
+					<div class="img-wrapper">
+
+						<img class="img-responsive img-center" src="assets/placeholder-800x500.jpg" alt="" />
+
+						<p class="text-center on-hover"><a class="btn btn-meflat icon-right" href="#external">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section> -->
+
+		<!-- ==============================================
+		ABOUT
+		=============================================== -->
+		<section id="about" class="dark-bg light-typo padding-top-bottom">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">About Me</h1>
+
+				</header>
+
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<img class="img-responsive img-center img-circle scrollimation fade-left" src="assets/about.jpg" alt="" />
+
+						<p class="text-center scrollimation fade-in">I am full stack web developer, photographer, and semi-pro graphic designer. I grew up around developers and found a love for creating websites and applications over the years. Agile methodologies are a huge part of my process and how I like to work. Currently learning : <a href="http://elm-lang.org/">elm.js</a>. </p>
+
+					</div>
+
+				</div>
+
+
+
+				<p class="text-center"><a class="btn btn-meflat scrollto white icon-left" href="#skills"><i class="fa fa-arrow-down"></i>Skills</a></p>
+
+			</div>
+
+		</section>
+		<!-- ==============================================
+		SKILLS
+		=============================================== -->
+		<section id="skills" class="white-bg">
+
+			<div class="container">
+
+				<div class="row skills">
+
+					<h1 class="text-center scrollimation fade-in">I Got the Skills</h1>
+
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="80"><span class="percent">80</span></span>
+						<h2 class="text-center">JavaScript/jQuery</h2>
+					</div>
+
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="75"><span class="percent">75</span></span>
+						<h2 class="text-center">HTML/CSS/Bootstrap</h2>
+					</div>
+
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="70"><span class="percent">70</span></span>
+						<h2 class="text-center">UI / UX</h2>
+					</div>
+
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="90"><span class="percent">90</span></span>
+						<h2 class="text-center">Ruby on Rails</h2>
+					</div>
+
+				</div><!--End row -->
+
+			</div>
+
+
+		</section>
+ 		<!-- ==============================================
+		PORTFOLIO
+		=============================================== -->
+		<section id="portfolio" class="gray-bg padding-top-bottom">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">My Projects</h1>
+					<p>A collection of things I've worked on.<br/> Websites, Applications, and Design.</p>
+
+				</header>
+
+				<!--==== Portfolio Filters ====-->
+				<div id="filter-works">
+					<ul>
+						<li class="scrollimation fade-right d1">
+							<a href="#" data-filter="*">All</a>
+						</li>
+						<li class="active scrollimation fade-right">
+							<a href="#" data-filter=".web-sites">Development</a>
+						</li>
+						<li class="scrollimation fade-left">
+							<a href="#" data-filter=".design">Design</a>
+						</li>
+
+					</ul>
+				</div><!--End portfolio filters -->
+
+			</div><!--End portfolio header -->
+
+			<div class="container masonry-wrapper scrollimation fade-in">
+
+				<div id="projects-container">
+
+					<!-- Joe Risdon Music  -->
+					<article class="project-item web-sites">
+
+						<img class="img-responsive project-image" src="assets/JoeRisdon-small.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Joe Risdon Music</h2><!--Project Title -->
+							<p>Website for artist, Joe Risdon</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Web Site"
+							data-date="3/15/2017"
+							data-client="Joe Risdon"
+							data-link="www.joerisdon.com,http://www.joerisdon.com"
+							data-descr="Ruby on Rails site for Joe Risdon Music"
+							data-images="assets/JoeRisdon-1.png,assets/JoeRisdon-2.png,assets/JoeRisdon-3.png"
+						>
+							<p><strong>Technologies:</strong> Ruby on Rails, Javascript, <a target="_blank" href="https://masonry.desandro.com/">Masonry.js</a> , HTML/SASS, BootStrap. <br>( Instagram, SoundCloud and <a href="https://postmarkapp.com/" target="_blank">PostMark</a> API's )</p>
+
+							<p><strong>Goals:</strong> Create a website with a CMS and admin account so the client can update and add perspective concert dates and albums for fans to view. Integrate mailing for agents to reach out to client without giving away personal information. Use Instagram and SoundCloud API's to provide the most up to date media for users to consume. Use Bootstrap to create a simple and mobile friendly layout.</p>
+
+							<p>
+								<strong>Duties:</strong>
+								<ul>
+									<li>Project Manager</li>
+									<li>Working side by side with client during development</li>
+									<li>Using Client provided mockups for design reference</li>
+									<li>Managing and integrating multiple API's into the website</li>
+									<li>Deploying and updating the live website</li>
+								</ul>
+							</p>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" target="_blank" href="http://www.joerisdon.com">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article>
+
+					<!-- collaboration contracts -->
+					<article class="project-item web-sites">
+
+						<img class="img-responsive project-image" src="assets/cto2-small.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Collaboration Contracts</h2><!--Project Title -->
+							<p>Web Application</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Web App"
+							data-date="TBA"
+							data-client="CTO2"
+							data-link="www.wearecto2.com,http://www.wearecto2.com/blog/2016/6/24/using-collaboration-contracts"
+							data-descr="A web version of Collaboration Contracts"
+							data-images="assets/cto2-1.png"
+						>
+						<p><strong>Technologies:</strong> Ruby on Rails, Javascript, <a target="_blank" href="https://masonry.desandro.com/">Masonry.js</a>, HTML/SCSS, BootStrap, <a href="https://postmarkapp.com/" target="_blank">PostMark</a>, FactoryGirl, Rspec, CodeCov, and <a href="https://travis-ci.org/" target="_blank">Travis CI</a></p>
+
+						<p><strong>Description:</strong> Collaboration Contracts is a web application where users can sign on and create a contract with decisions to be answered. Invite users to a contract as well as answer and complete a contract. Read about Collaboration Contracts <a href="http://www.wearecto2.com/blog/2016/6/24/using-collaboration-contracts" target="_blank">here.</a></p>
+
+						<p>
+							<strong>Duties:</strong>
+							<ul>
+								<li>Lead Developer/Project Manager</li>
+								<li>Working close with client during planning stages.</li>
+								<li>Creating story maps and user stories during planning stages.</li>
+								<li>Deploying and writing versions to allow for live updates from day one.</li>
+								<li>Using test driven development to insure working/secure code base. </li>
+								<li>Deploying and updating the live website.</li>
+							</ul>
+						</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" target="_blank" href="http://www.wearecto2.com">Visit CTO2<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article><!--End Project Item -->
+
+					<!-- Plasticity LLC  -->
+					<article class="project-item web-sites">
+
+						<img class="img-responsive project-image" src="assets/plasticity-small.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Plasticity Dev</h2><!--Project Title -->
+							<p>Website for Plasticity, LLC</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Website"
+							data-date="01/15/2017"
+							data-client="Plasticity Dev"
+							data-link="www.plasticity-dev.com,http://www.plasticity-dev.com"
+							data-descr="A business site for Plasticity LLC"
+							data-images="assets/plasticity-1.png,assets/plasticity-2.png"
+						>
+							<p><strong>Technologies:</strong> Javascript, HTML/CSS, Ruby, BootStrap, and <a href="https://postmarkapp.com/" target="_blank">PostMark api</a></p>
+
+							<p><strong>Goals:</strong> Quickly create an informational website for Plasticity LLC. Integrate PostMark to allow for potential new clients to reach out. Design a logo and header background for better branding. </p>
+
+							<p>
+								<strong>Duties:</strong>
+								<ul>
+									<li>Project Manager</li>
+									<li>Working with and editing Bootstrap template to get project up and running.</li>
+									<li>Using responsive desing practices for mobile and tablet users.</li>
+									<li>Working with client to create logo's and design for website and branding purposes</li>
+									<li>Deploying and updating the live website</li>
+								</ul>
+							</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" target="_blank" href="http://www.plasticity-dev.com">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article><!--End Project Item -->
+
+					<!-- Wilde Corp -->
+					<article class="project-item web-sites">
+
+						<img class="img-responsive project-image" src="assets/wilde-small.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Wilde Corp Insurance</h2><!--Project Title -->
+							<p>WebSite for Wilde Corp</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Website"
+							data-date="2/20/15"
+							data-client="Wilde Corp Insurance"
+							data-link="www.WildeCorpInsurance.com,http://www.wildecorpinsurance.com"
+							data-descr="Web Site for Insruance Company"
+							data-images="assets/wilde-1.png,assets/wilde-2.png,assets/wilde-3.png"
+						>
+							<p><strong>Technologies:</strong> HTML, CSS, Sinatra and <a href="https://postmarkapp.com/" target="_blank">PostMark api</a></p>
+
+							<p><strong>Goals:</strong> Create a website that provides a web-presence and information for Wilde Corp Insurance, an Ohio based insurance company. Allow users to request insurance quotes and file claims to client. Provide email and text notifications to employees client side.  </p>
+
+							<p>
+								<strong>Duties:</strong>
+								<ul>
+									<li>Lead Developer/Project Manager</li>
+								</ul>
+							</p>
+							<p><strong>Note:</strong> This was a low profile case and my first project as a learning developer.</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" target="_blank" href="http://www.wildecorpinsurance.com">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article><!--End Project Item -->
+
+					<!-- TaskMapper  -->
+					<article class="project-item web-sites">
+
+						<img class="img-responsive project-image" src="assets/TaskMapper-small.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">TaskMapper</h2><!--Project Title -->
+							<p>Mobile Application</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Mobile App"
+							data-date="5/15/16"
+							data-client="Hack Project"
+							data-link="Watch Video,https://drive.google.com/file/d/0B9AjBVHu_enfakk4cDJXaHN1dU0/view"
+							data-descr="8 Days, 5 People, 1 New Language."
+							data-images="assets/tm-1.png,assets/tm-2.png,assets/tm-3.png"
+						>
+							<p><strong>Technologies:</strong> React Native, JavaScript, Google Maps Api, Xcode</p>
+
+							<p><strong>Description:</strong> Worked with a team of five to create an interactive google maps based todo list. In the span of 8 days myself and four others learned the basics of React Native and created this app as a challenge to ourselves. Two days were spent planning the project. (Choosing between Ionic and React Native as well as design.) Two more days were used to research and learn React Native. The remaining four days were used to put the project together and continue learning.</p>
+
+							<p>
+								<strong>Duties:</strong>
+								<ul>
+									<li>Front End Developer</li>
+									<li>Worked with lead developers to implement the look and feel of the application.</li>
+									<li>Helped with creating user stories and story mapping.</li>
+									<li>Shared my knowledge with other developers as we learned the new language together.</li>
+									<li>Designed logo and created a promotional video.</li>
+									<li>Provided motivational support for team members during times of stress.</li>
+								</ul>
+							</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" target="_blank" href="https://github.com/SeanMNorton/TaskMapper">Our Github<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article><!--End Project Item -->
+
+					<!-- Design TaskMapper -->
+					<article class="project-item design">
+
+						<img class="img-responsive project-image" src="assets/TMLogo-small.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">TaskMapper</h2><!--Project Title -->
+							<p>Logo</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Logo"
+							data-date="5/15/16"
+							data-client="Self Challenge"
+							data-link=""
+							data-descr=""
+							data-images="assets/tm-1.png,assets/tm-4.png"
+						>
+							<p>This logo was specifically designed for the TaskMapper Applictaion</p>
+							<p>TaskMapper is a single user real-time platform for individuals to set a task with a corresponding due date and location. The user will get notifications, when the they are within the growing radius of task, to be reminded of the task to be completed.</p>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" target="_blank" href="https://github.com/SeanMNorton/TaskMapper">TaskMapper Github<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article><!--End Project Item -->
+
+					<!-- Design Buffalo Ryders  -->
+					<article class="project-item design">
+
+						<img class="img-responsive project-image" src="assets/buffalo-logo.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">The Buffalo Ryders</h2><!--Project Title -->
+							<p>Band Logo</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Project Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							data-category="Logo"
+							data-date=""
+							data-client="The Buffalo Ryders Band"
+							data-link=""
+							data-descr=""
+							data-images="assets/buffalo-1.png,assets/buffalo-2.png"
+						>
+							<p>This logo was designed for The Buffalo Ryders, a blues/rock band from Ohio.</p>
+
+							<p>I worked with the lead band member to create a logo that expressed thier love for buffalo and commented on the technology takeover of our day and age.</p>
+
+						</div>
+
+					</article><!--End Project Item -->
+
+				</div><!-- End projects -->
+
+			</div><!-- End container -->
+
+			<!-- ==============================================
+			PROJECT PREVIEW MODAL
+			=============================================== -->
+			<div id="project-modal" class="modal fade">
+
+				<div class="modal-dialog">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<div class="container">
+
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+								<h1 id="hdr-title" class="text-center"></h1>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="image-wrapper">
+											<img class="img-responsive" src="assets/chrome.png" alt="">
+											<div class="loader"></div>
+											<div class="screen"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div id="project-sidebar" class="col-md-3">
+										<h2 id="sdbr-title"></h2>
+										<p id="sdbr-category"></p>
+										<p id="sdbr-date"></p>
+										<p id="sdbr-client"></p>
+										<p id="sdbr-link"><a href="#link" target="_blank"></a></p>
+										<p id="sdbr-descr"></p>
+									</div>
+									<div id="project-content" class="col-md-8 col-md-offset-1">
+									</div>
+								</div>
+
+							</div>
+						</div><!-- End modal-body -->
+
+						<div class="text-center">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+
+					</div><!-- End modal-content -->
+
+				</div><!-- End modal-dialog -->
+
+			</div><!-- End modal -->
+
+		</section>
+
+		<!-- ==============================================
+		CONTACT
+		=============================================== -->
+		<section id="contact" class="dark-bg light-typo padding-top">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">Let's Talk</h1>
+					<p>Want to know more about me? Share something cool you're learning? Or anything else.<br/> Let's get in touch! Just drop a line in the form below.</p>
+
+				</header>
+
+				<form  id="contact-form" class="bl_form text-center" action="contact.php" method="post" novalidate>
+					<span class="field-wrap scrollimation fade-right">
+						<label class="control-label" for="contact-name">Name</label>
+						<input id="contact-name" name="contactName" type="text" class="label_better requiredField" data-new-placeholder="Name" placeholder="Name" data-error-empty="*Enter your name">
+					</span>
+					<span class="field-wrap scrollimation fade-in">
+						<label class="control-label" for="contact-mail">Email</label>
+						<input id="contact-mail" name="email" type="email" class="label_better requiredField" data-new-placeholder="Email Address" placeholder="Email Address" data-error-empty="*Enter your email" data-error-invalid="x Invalid email address">
+					</span>
+					<span class="field-wrap scrollimation fade-left">
+						<label class="control-label" for="contact-message">Message</label>
+						<textarea id="contact-message" name="comments" rows="1" class="label_better requiredField" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
+					</span>
+
+					<p class="text-center"><button  name="submit" type="submit" class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+					<input type="hidden" name="submitted" id="submitted" value="true" />
+
+				</form>
+
+			</div>
+
+		</section>
+
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->
+
+		<footer id="main-footer" class="dark-bg light-typo">
+
+			<div class="container">
+
+				<hr>
+
+				<div class="row">
+
+					<div class="col-sm-6">
+						<ul class="social-links">
+							<ul class="social-links">
+								<li class="scrollimation fade-right d4"><a href="https://twitter.com/SeanMNorton"><i class="fa fa-twitter fa-fw"></i></a></li>
+								<li class="scrollimation fade-right d3"><a href="https://www.facebook.com/SeanMichaelNorton"><i class="fa fa-facebook fa-fw"></i></a></li>
+								<li class="scrollimation fade-right d2"><a href="https://github.com/SeanMNorton"><i class="fa fa-github fa-fw"></i></a></li>
+								<li class="scrollimation fade-right"><a href="https://www.linkedin.com/in/seanmnorton/"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							</ul>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 text-right" style="opacity: 0.08;">
+						<p>&copy;2014 Me Flat Theme by <a href="http://q-themes.net/">Qthemes</a></p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
+
+		<script src="js/libs/bootstrap.min.js"></script>
+		<script src='js/jquery.easing.1.3.min.js'></script>
+		<script src='js/jquery.scrollto.js'></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src='js/jquery.flexslider.min.js'></script>
+		<script src='js/jquery.masonry.js'></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.label_better.min.js"></script>
+		<script src="js/jquery.easypiechart.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/meflat.js"></script>
+
+	</body>
+
 </html>
